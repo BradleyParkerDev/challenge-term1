@@ -2,7 +2,6 @@
 //arrayReverse
 /////////////////////////////////////////////////////////
 let myArray = [1,2,3,4,5];
-
 function arrayReverse(arr){
     let newArray = [];
     for(let i = arr.length - 1; i > -1; i--){
@@ -27,7 +26,6 @@ function inBothArrays(arr1, arr2){
         }
     }
     console.log(newArray);
-
 }
 inBothArrays(myArray,myArray2);
 
@@ -71,7 +69,6 @@ function palindrome(str){
         if(str[i] === str[str.length-(1+i)]){
             newStr = newStr + str[i];
         }
-
     }
     if(newStr === str){
         console.log("The string is a palindrone!")
@@ -115,7 +112,6 @@ function isPrime(num){
             count++
         }
     }
-
     if(count > 0){
         return false;
     }
@@ -130,7 +126,6 @@ console.log(isPrime(43));
 //secondLargest
 /////////////////////////////////////////////////////////
 function secondLargest(arr){
-
 //Bubblesort
     //Outer pass
     for(let i = 0; i < arr.length; i++){
@@ -145,5 +140,4 @@ function secondLargest(arr){
     };
     return arr[arr.length-2];
 };
-
 console.log(secondLargest([5,3,8,4,6]));
