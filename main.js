@@ -131,8 +131,19 @@ console.log(isPrime(43));
 /////////////////////////////////////////////////////////
 function secondLargest(arr){
 
+//Bubblesort
+    //Outer pass
     for(let i = 0; i < arr.length; i++){
-        arr[i]
-    }
-    
-}
+        //Inner pass
+        for(let j = 0; j < arr.length - i - 1; j++){
+            //Value comparison using ascending order
+            if(arr[j + 1] < arr[j]){
+                //Swapping
+                [arr[j + 1],arr[j]] = [arr[j],arr[j + 1]]
+            }
+        }
+    };
+    return arr[arr.length-2];
+};
+
+console.log(secondLargest([5,3,8,4,6]));
